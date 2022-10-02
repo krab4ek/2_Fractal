@@ -1,12 +1,12 @@
 import turtle
 
-width = 1280
-height = 720
+width = 720
+height = 500
 screen = turtle.Screen()
 screen.setup(width,height,0,0)
 
 def draw_koch_segment(t,ln):
-    ln_part = 8
+    ln_part = 6
     if ln > ln_part:
         ln_part = ln//3
         draw_koch_segment(t,ln_part)
