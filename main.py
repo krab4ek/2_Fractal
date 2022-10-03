@@ -1,6 +1,6 @@
 import turtle
 
-width = 720
+width = 500
 height = 500
 screen = turtle.Screen()
 screen.setup(width,height,0,0)
@@ -27,8 +27,16 @@ def draw_koch_segment(t,ln):
         t .fd(ln)
 
 t = turtle.Turtle()
-t.speed(100)
-t.ht()
-draw_koch_segment(t, 1000)
+t.setpos(-240,-240)
+t.hideturtle()
+t.clear()
+t.speed(500)
+
+
+draw_koch_segment(t, 150)
+t.left(60)
+draw_koch_segment(t, 150)
+t.left(60)
+draw_koch_segment(t, 150)
 
 turtle.done()
